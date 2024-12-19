@@ -1,0 +1,24 @@
+{
+  "name": "script",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "nodemon index.mjs",
+    "serve": "node index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "axios": "^1.7.9",
+    "clipboardy": "^4.0.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "node-global-key-listener": "^0.3.0",
+    "readline-sync": "^1.4.10",
+    "robotjs": "^0.6.0"
+  }
+}
