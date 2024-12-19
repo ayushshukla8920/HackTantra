@@ -4,7 +4,7 @@ import clipboardy from 'clipboardy';
 import fs from 'fs';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import 'dotenv/config';
-import user from './node_modules/credentials/user.json' with { type: "json" };
+const user = JSON.parse(fs.readFileSync('./node_modules/user.json', 'utf-8'));
 let isAltPressed = false;
 let isKeyPressed = false;
 const language = process.env.lang;
@@ -20,7 +20,7 @@ if(user){
         isActivated = true;
     }
     else{
-        fs.writeFileSync('./node_modules/credentials/user.json', JSON.stringify({}));
+        fs.writeFileSync('./node_modules/user.json', JSON.stringify({}));
     }
 }
 if(isActivated){

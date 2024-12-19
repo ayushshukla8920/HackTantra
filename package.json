@@ -2,6 +2,7 @@
   "name": "script",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "nodemon index.mjs",
     "serve": "node index.mjs"
